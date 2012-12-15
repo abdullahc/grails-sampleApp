@@ -3,7 +3,6 @@
 <head>
 
 		<r:require module="jquery-ui"/>
-		<r:require module="backbone"/>
 		<r:layoutResources />
 
     <script type="text/javascript">
