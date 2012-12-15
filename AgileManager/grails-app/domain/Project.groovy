@@ -16,6 +16,8 @@ class Project {
     String name
     String description
     String url
+    User creator
+
 	
 	
 	static hasMany = [stories:Story,users:User] 
@@ -25,7 +27,7 @@ class Project {
         name(size: 0..45)
         description(size: 0..45)
         url(size: 0..45)
-    }
+}
     String toString() {
         return "${name}" 
     }
