@@ -52,14 +52,14 @@ class DashboardController {
 		
 		project.save(flush:true)
 		
-		/*def story = Story.find("from Story as s where s.name = 'story title'")
+		def story = Story.find("from Story as s where s.name = 'story title'")
 		story.addToRequirements(title: "Requirement1", description: "Requirement Description")
 		story.addToRequirements(title: "Requirement2", description: "Requirement Description")
 		story.addToRequirements(title: "Requirement3", description: "Requirement Description")
 		story.addToRequirements(title: "Requirement4", description: "Requirement Description")
 		story.addToRequirements(title: "Requirement5", description: "Requirement Description")
 		story.save(flush:true)
-		*/
+		
 		
 		
 		def responseData = [
