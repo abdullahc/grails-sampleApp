@@ -90,3 +90,10 @@ log4j = {
            'net.sf.ehcache.hibernate'
 }
 
+
+// Added by the Spring Security Core plugin:
+grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.xlnc.agile.Person'
+grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.xlnc.agile.PersonAuthority'
+grails.plugins.springsecurity.authority.className = 'com.xlnc.agile.Authority'
+grails.plugins.springsecurity.requestMap.className = 'com.xlnc.agile.Requestmap'
+grails.plugins.springsecurity.securityConfigType = 'Requestmap'

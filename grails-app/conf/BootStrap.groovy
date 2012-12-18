@@ -1,3 +1,5 @@
+import com.xlnc.agile.*
+
 class BootStrap {
 
     def init = { servletContext ->
