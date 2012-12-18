@@ -41,6 +41,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${storyInstance?.project}">
+				<li class="fieldcontain">
+					<span id="project-label" class="property-label"><g:message code="story.project.label" default="Project" /></span>
+					
+						<span class="property-value" aria-labelledby="project-label"><g:link controller="project" action="show" id="${storyInstance?.project?.id}">${storyInstance?.project?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${storyInstance?.requirements}">
 				<li class="fieldcontain">
 					<span id="requirements-label" class="property-label"><g:message code="story.requirements.label" default="Requirements" /></span>

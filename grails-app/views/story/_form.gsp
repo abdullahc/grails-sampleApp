@@ -18,6 +18,14 @@
 	<g:textField name="description" maxlength="45" value="${storyInstance?.description}"/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: storyInstance, field: 'project', 'error')} required">
+	<label for="project">
+		<g:message code="story.project.label" default="Project" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select id="project" name="project.id" from="${Project.list()}" optionKey="id" required="" value="${storyInstance?.project?.id}" class="many-to-one"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: storyInstance, field: 'requirements', 'error')} ">
 	<label for="requirements">
 		<g:message code="story.requirements.label" default="Requirements" />

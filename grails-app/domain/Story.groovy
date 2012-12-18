@@ -13,12 +13,14 @@ class Story {
          id generator:'identity', column:'id'
     }
 	
+	static belongsTo = Project
 	static hasMany = [requirements:Requirement]
 	
     Integer id
     String name
     String description
 	Date startDate
+	Project project
 
 
 	
