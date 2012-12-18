@@ -89,3 +89,15 @@ log4j = {
            'org.hibernate',
            'net.sf.ehcache.hibernate'
 }
+
+
+
+oauth {
+	providers {
+		twitter {
+			api = TwitterApi
+			key = 'B11iAyjqumHExaywkYJkyw'
+			secret = 'CbavqdbUQ8h5qHGurzYFXbj5zrf0K88725o2Xv5W4'
+		}
+	}
+}
