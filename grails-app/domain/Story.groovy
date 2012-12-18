@@ -18,6 +18,7 @@ class Story {
     Integer id
     String name
     String description
+	Date startDate
 
 
 	

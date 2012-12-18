@@ -38,12 +38,13 @@ class DashboardController {
 		
 		def project = new Project(name: "Stephen King 2",description:"",url:"")
 	
+		def storyDate = new Date()
 		
-		project.addToStories(name: "story title", description: "new description")
-		project.addToStories(name: "Sample bootstrpped story", description: "a story description has been added")
-		project.addToStories(name: "Sample bootstrpped story 2", description: "a story description has been added")
-		project.addToStories(name: "Sample bootstrpped story 3", description: "a story description has been added")
-		project.addToStories(name: "Sample bootstrpped story 4", description: "a story description has been added")
+		project.addToStories(name: "story title", description: "new description", startDate: storyDate)
+		project.addToStories(name: "Sample bootstrpped story", description: "a story description has been added",startDate: storyDate)
+		project.addToStories(name: "Sample bootstrpped story 2", description: "a story description has been added",startDate: storyDate)
+		project.addToStories(name: "Sample bootstrpped story 3", description: "a story description has been added",startDate: storyDate)
+		project.addToStories(name: "Sample bootstrpped story 4", description: "a story description has been added",startDate: storyDate)
 		
 		project.addToUsers(username: "hooked username", password: "new password",email:"")
 		project.addToUsers(username: "bootstrappedUser1", password: "newpassword",email:"admin@agile.com")

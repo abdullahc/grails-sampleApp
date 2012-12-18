@@ -52,6 +52,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${storyInstance?.startDate}">
+				<li class="fieldcontain">
+					<span id="startDate-label" class="property-label"><g:message code="story.startDate.label" default="Start Date" /></span>
+					
+						<span class="property-value" aria-labelledby="startDate-label"><g:formatDate date="${storyInstance?.startDate}" /></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form>
 				<fieldset class="buttons">
